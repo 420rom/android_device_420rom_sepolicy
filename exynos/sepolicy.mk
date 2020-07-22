@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all exynos products
-# that inherit from Lineage
+# that inherit from 420rom
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,14 +10,14 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/lineage/sepolicy/exynos/private
+    device/420rom/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/lineage/sepolicy/exynos/dynamic \
-    device/lineage/sepolicy/exynos/system
+    device/420rom/sepolicy/exynos/dynamic \
+    device/420rom/sepolicy/exynos/system
 else
 BOARD_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/exynos/dynamic \
-    device/lineage/sepolicy/exynos/vendor
+    device/420rom/sepolicy/exynos/dynamic \
+    device/420rom/sepolicy/exynos/vendor
 endif
